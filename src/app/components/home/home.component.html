@@ -3,16 +3,16 @@
     {{ 'PAGES.HOME.TITLE' | translate }}
   </h1> -->
   <header>
-    <strong><span>YT</span>DESK</strong>
+    <strong><span>YouTube</span> SCOUT</strong>
     <nav>
       <ul>
-        <li><img src="./../../assets/btn-min.svg" alt="" id="min" (click)="minimizeWindow()"></li>
-        <li><img src="./../../assets/btn-close.svg" alt="" id="min" (click)="closeWindow()"></li>
+        <li><img src="./assets/btn-min.svg" alt="" id="min" (click)="minimizeWindow()"></li>
+        <li><img src="./assets/btn-close.svg" alt="" id="min" (click)="closeWindow()"></li>
       </ul>
     </nav>
   </header>
 
-  <input type="text" placeholder="Channel Username" value="UCW-1_Qpgvqvwcf9rf22nNmg" (keyup.enter)="Channel($event.target.value)">
+  <input type="text" placeholder="Channel Username" value="UCW-1_Qpgvqvwcf9rf22nNmg" (keyup.enter)="channel($event.target.value)">
 
   <main>
     <ng-container *ngFor="let channel of channelInfo.items">
